@@ -214,3 +214,4 @@ creds/
 # Data
 data/tracking_*.json
 *.mp4
+tracking_*.json
