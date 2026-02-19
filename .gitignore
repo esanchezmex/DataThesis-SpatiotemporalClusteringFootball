@@ -215,3 +215,5 @@ creds/
 data/tracking_*.json
 *.mp4
 tracking_*.json
+tracking_*.json
+*.mp4
