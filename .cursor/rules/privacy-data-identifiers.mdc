@@ -1,0 +1,12 @@
+---
+description: Ensure no personally identifiable player or team information is ever loaded into any dataset.
+alwaysApply: true
+---
+
+# Privacy and Identifiable Information
+
+- **Never load identifiable data**: Always ensure that player names, team names, and any other directly or indirectly identifiable information are **never loaded into any dataset**, whether raw, intermediate, or final.
+- **Anonymize at the source**: If source data contains identifiers (e.g., player name, team name, jersey number, external IDs), strip or anonymize them **before** any loading, preprocessing, or feature engineering.
+- **Use non-identifiable keys only**: When referencing entities (players, teams, matches), use non-identifiable, privacy-preserving IDs or hashes that cannot be reversed to reveal the original identity.
+- **Review new data sources**: For any new data source or schema, explicitly check for columns or fields that may contain identifiers and exclude or anonymize them before use.
+- **No re-identification**: Do not join, merge, or otherwise combine datasets in ways that could reconstruct or infer player or team identities.
