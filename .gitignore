@@ -215,9 +215,6 @@ __marimo__/
 # Credentials
 creds/
 
-# Large / local player-level artifact (remove this line to track in git)
-processed_player_profiles.pkl
-
 # Data
 data/tracking_*.json
 *.mp4

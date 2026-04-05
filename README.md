@@ -112,4 +112,4 @@ If you reuse this repository, please cite the thesis:
 
 > **Spatiotemporal Representation Learning in Football: Defining Fluid Tactical Roles to Optimize Expected Goals (xG)**
 
-(Add your name, institution, and year when the thesis is finalized.)
+Esteban Sanchez Perezconde, IE University, 2026.
