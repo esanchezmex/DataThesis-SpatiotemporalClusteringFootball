@@ -4,6 +4,19 @@ This repository contains the code for a thesis pipeline that learns **spatiotemp
 
 ---
 
+## Abstract / Executive Summary
+
+The position-based approach to understanding player function has become increasingly less relevant as the game has evolved toward dynamic, movement-oriented, tactical systems. The traditional static models fail to provide a realistic representation of the positional ambiguity inherent in the game today. In turn, the structural ambiguity in modern football creates an additional challenge to the **"squad composition problem"** where clubs are constantly investing large sums of money on players but lack objective frameworks to measure whether those investments will result in spatially aligned lineups that complement each other. To begin to address this void, this research presents a **multi-dimensional framework to empirically identify clusters of tactical roles and to calculate how the composition of these roles within a lineup influences attacking efficiency.** The study utilizes optical tracking data and play-by-play event data from a full professional domestic league season. Those events were transformed into five layer spatial tensors (Presence, Passes, Carries, Goal Threat, Receptions), to profile players based on their complete attacking footprint. **A 16-dimensional spatiotemporal autoencoder** was utilized to compress these high-dimensional tensors into a condensed representation of latent tactical features. Then, a Gaussian Mixture Model (GMM) was applied to the results of the autoencoder to generate empirically based clusters of player roles. Multiple linear regression (MLR) was employed to determine the relationship between the composition of the roles within a given lineup and the expected number of goals per ninety minutes (xG/90). Ultimately, the clustering pipeline developed here resolved many of the positional ambiguities associated with previous studies by developing ten empirical macro-roles; the MLR modeling provided directional evidence that xG/90 is influenced by the configurations and synergies of these spatial profiles. Therefore, this research provides a quantitative framework for converting tactical intuition into a calculable optimization problem.
+
+---
+
+### Model Architecture
+
+<img src="Spatiotemporal Autoencoder Diagram-1.png" alt="Spatiotemporal Autoencoder Flowchart" width="600" />
+
+
+---
+
 ## Privacy and data
 
 - Committed code and generated artifacts are intended to use **non-identifying keys** (for example numeric IDs) rather than player or club names in published outputs. Treat any raw vendor exports as **confidential**.
